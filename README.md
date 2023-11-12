@@ -32,7 +32,8 @@ Welcome to the School Management System, a web application built with Django to 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/school-management-system.git
+   git clone https://github.com/Mari-selvam/School.git
+   ```
 
 
 2. Change directory:
