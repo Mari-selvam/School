@@ -1,0 +1,77 @@
+{% extends "master.html" %}
+
+
+{% block body %}
+
+
+
+{% load static %}
+
+<div id="main">
+    <div id="student"  onclick="window.location.href='/school/create-account/student';">
+        <img src="{% static 'images/student.jpg' %}" style="height: 250px; width: 200px; border-radius:30px ;" onclick="/school/create-account/student" >
+        <p style="font-size: large; padding: 10px; padding-left: 60px;font-weight: bold; color: black;">Student</p>
+    </div>
+    <div id="teacher" onclick="window.location.href='/school/create-account/teacher';">
+        <img src="{% static 'images/teacher.jpg' %}" style="height: 250px; width: 200px; border-radius:30px ;">
+        <p style="font-size: large; padding: 10px; padding-left: 60px;font-weight: bold; color: black;" href="/school/create-account/student">Teacher</p>
+
+
+    </div>
+    
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+    #main{
+        display: flex;
+
+    }
+    #student{
+        height: 250px;
+        width: 200px;
+        background-color: black;
+        margin-left: 30%;
+        margin-top: 15%;
+        border-radius: 30px;
+
+    }
+
+    #teacher{
+        height: 250px;
+        width: 200px;
+        background-color: black;
+        margin-left: 100px;
+        margin-top: 15%;
+        border-radius: 30px;
+    }
+    body{
+        background-image: url("{% static 'images/background.png'%}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 900px;
+        color: white;
+
+    }
+
+</style>
+    
+{% endblock  %}
+    

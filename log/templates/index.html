@@ -1,0 +1,104 @@
+{% extends 'master.html' %}
+
+
+{% block title %}
+    Home  
+{% endblock title %}
+    
+
+{% block body %}
+    {% load static %}
+    <img src="{% static 'images/schooll.jpg' %}" style="height: 600px;width: 100%;">
+
+
+    <h3 style="margin-left: 10%;">Welcome to Our School!</h3>
+    <p style="margin-left: 20%;margin-right: 10%;line-height: 180%;">Explore Fun Learning Adventures with Us!<br>
+
+        <br>At ABC School, we offer exciting courses that make learning as enjoyable as playtime! Our classes are designed to spark creativity, encourage curiosity, and nurture young minds. Discover the magic of education through our vibrant and interactive courses tailored just for kids like you!</p>
+
+        <h3 style="margin-left: 10%;margin-top: 5%; margin-bottom: 100px;">Courses We Offer:</h3>
+
+    <div class="boxs">
+    <div class="box red">
+        <h1>🎨 Artistic Adventures        </h1>
+        <p style="line-height: 170%; padding-left: 100px;">Dive into the colorful world of art! From painting to crafts, our art classes let your creativity run wild. Explore various techniques and create masterpieces that you'll cherish forever!</p>
+        <img src="{% static 'images/kid-1.jpg' %}" style="height: 200px; width: 300px; border-radius: 20px; margin-left: 150px;">
+
+    </div>
+    <div class="box blue">
+        <h1>🚀 Science Explorers</h1>
+        <p style="line-height: 170%; padding-left: 100px;">Embark on thrilling scientific quests! Unravel the mysteries of the universe, conduct exciting experiments, and learn about the wonders of nature. Science has never been this much fun!</p>
+        <img src="{% static 'images/kid-2.webp' %}" style="height: 300px; width: 300px; border-radius: 20px; margin-left: 150px;">
+
+    </div>
+    <div class="box green">
+        <h1>🎶 Musical Melodies</h1>
+        <p style="line-height: 170%; padding-left: 100px;">Discover the joy of music! From playing instruments to singing your favorite tunes, our music classes will have you dancing to the rhythm and harmonizing with melodies.</p>        
+        <video width="300px" height="300px" controls autoplay style="margin-left: 130px; border-radius: 30px;">
+            <source src="{% static 'images/music.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+</div>
+
+
+
+
+
+
+    <style>
+
+
+        box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+
+        .red { background-color: #ff6347;
+            margin-left: 100px;
+            height: 400px;
+            width: 600px;
+            margin-right: 50px;
+            border-radius: 20px;
+            padding-left: 40px;
+            padding-top: 2%;
+            line-height: 130%;
+
+}
+        .blue { background-color: #1e90ff;
+            margin-left: 50%;
+            height: 500px;
+            width: 600px;
+            margin-right: 50px;
+            border-radius: 20px;
+            padding-left: 40px;
+            padding-top: 2%;
+            line-height: 130%;
+            margin-top: 10%;}
+        .green { background-color: #2ecc71; 
+            margin-left: 100px;
+            height: 500px;
+            width: 600px;
+            margin-right: 50px;
+            border-radius: 20px;
+            padding-left: 40px;
+            padding-top: 2%;
+            line-height: 130%;
+            margin-top: 200px;
+
+    </style>
+
+<p style=" font-family: 'Times New Roman', Times, serif; font-size: 30px;margin-left: 20%;margin-top: 30%;">"Education is the key to unlocking the world, a passport to freedom." </p>
+<p style="font-family:'Times New Roman', Times, serif; font-size: 30px; margin-left: 70%; margin-bottom: 50px;"> - Oprah Winfrey</p>
+
+
+
+{% endblock body %}

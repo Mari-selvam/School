@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header class="site-header">
+    <title>
+    {% block title %}
+        
+    {% endblock %}
+        </title>
+    {%load static %}
+    <div class="site-identity">
+      <a href="/school/Home"><img src="https://fundamentals.schoolwide.com/static/media/icon-schoolwide.7d97c3a9.svg" alt="Site Name" /></a>
+      <h1><a href="/school/Home">ABC School</a></h1>
+    </div> 
+    <link type="stylesheet"  href="{% static 'css/index.css' %}">
+    <nav class="site-navigation">
+      <ul class="nav">
+        <li><a href="/school/Teacher">Teacher</a></li> 
+        <li><a href="/school/Student">Student</a></li>
+        <li><a href="/school/create-account">Create Account</a></li>
+        <li><a href="javascript:history.back()"><button style='border-radius: 6px; width: 50px; height: 25px;'>Back</button></a></li> 
+
+
+
+      </ul>
+    </nav>
+
+
+</header>
+
+<body>
+    
+    {%load static %}
+
+    {% block body %}
+
+    {% endblock %}
+        
+
+
+
+    <style>
+
+        body {
+            font-family: Helvetica;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .site-header { 
+            border-bottom: 1px solid #ccc;
+            padding: .5em 1em;
+            background-image: linear-gradient(to right,rgb(155, 193, 209),rgb(167, 167, 255));
+            box-shadow: 100px;;
+            
+        }
+        
+        .site-header::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .site-identity {
+            float: left;
+        }
+        
+        .site-identity h1 {
+            font-size: 1.5em;
+            margin: .7em 0 .3em 0;
+            display: inline-block;
+        }
+          
+        .site-identity img {
+            max-width: 55px;
+            float: left;
+            margin: 0 10px 0 0;
+        }
+          
+        .site-navigation {
+            float: right;
+        }
+          
+        .site-navigation ul, li {
+            margin: 0; 
+            padding: 0;
+        }
+        
+        .site-navigation li {
+            display: inline-block;
+            margin: 1.4em 1em 1em 1em;
+        }
+
+        
+
+            
+    </style>
+
+</body>
