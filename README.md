@@ -1,6 +1,3 @@
-Certainly! Below is the Markdown code for your README.md file:
-
-```markdown
 # School Management System with Django DBMS
 
 Welcome to the School Management System, a web application built with Django to manage various aspects of a school, including administration, teacher, and student functionalities.
@@ -36,7 +33,7 @@ Welcome to the School Management System, a web application built with Django to 
 
    ```bash
    git clone https://github.com/yourusername/school-management-system.git
-   ```
+
 
 2. Change directory:
 
