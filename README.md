@@ -39,7 +39,7 @@ Welcome to the School Management System, a web application built with Django to 
 2. Change directory:
 
    ```bash
-   cd school-management-system
+   cd School
    ```
 
 3. Install dependencies:
