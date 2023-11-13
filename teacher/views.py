@@ -21,8 +21,6 @@ def Login(request):
 
 
 def home(request):
-    if len(user_name) > 0:
-        return redirect("/Login")
 
     
     return render(request=request,template_name='home.html')
