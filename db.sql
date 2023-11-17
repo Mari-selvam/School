@@ -66,4 +66,4 @@ CREATE Table users(
     userType set('Admin','Teacher','Student')
 )
 
-SHOW TABLes;
+SHOW TABLES;
